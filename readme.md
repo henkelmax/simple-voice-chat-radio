@@ -21,6 +21,11 @@ The mp3 stream must be playable by [JLayer](https://web.archive.org/web/20210108
 
 - `/radio create "<stream-url" "<station-name>"` - Gives you a radio playing the provided mp3 stream
 
+## How to get Radio Stream URLs
+
+You might find the stream URL on your radio stations' website.
+If you want to search for a radio station, [streamurl.link](https://streamurl.link/) might have it.
+
 ## Configuration
 
 | Property                   | Description                                            | Default |
