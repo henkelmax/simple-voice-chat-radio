@@ -2,6 +2,12 @@
 
 A server-side Simple Voice Chat addon mod for Fabric adding a radio block capable of streaming mp3 radio streams.
 
+## Disclaimer
+
+This mod may not be able to play all mp3 streams.
+The mp3 stream must be playable by [JLayer](https://web.archive.org/web/20210108055829/http://www.javazoom.net/javalayer/javalayer.html).
+**Please don't report issues if the stream you are trying to play is not working.**
+
 ## Usage
 
 - Install this mod alongside [Simple Voice Chat](https://modrinth.com/plugin/simple-voice-chat) on your server
@@ -27,4 +33,5 @@ A server-side Simple Voice Chat addon mod for Fabric adding a radio block capabl
 
 ## Credits
 
+- [JLayer](https://web.archive.org/web/20210108055829/http://www.javazoom.net/javalayer/javalayer.html)
 - [Radio Skin](https://minecraft-heads.com/custom-heads/decoration/215-radio)
