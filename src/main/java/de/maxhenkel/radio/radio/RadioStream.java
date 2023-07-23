@@ -148,14 +148,14 @@ public class RadioStream implements Supplier<short[]> {
 
             SampleBuffer output = (SampleBuffer) decoder.decodeFrame(frameHeader, bitstream);
             short[] samples = output.getBuffer();
-            lastSampleCount = samples.length;
+            lastSampleCount = output.getBufferLength();
             bitstream.closeFrame();
 
             if (streamConverter == null) {
                 streamConverter = new StreamConverter(decoder.getOutputFrequency(), decoder.getOutputChannels());
             }
 
-            streamConverter.add(samples);
+            streamConverter.add(samples, 0, output.getBufferLength());
             return streamConverter.getFrame();
         } catch (Exception e) {
             Radio.LOGGER.warn("Failed to stream audio from {}", radioData.getUrl(), e);

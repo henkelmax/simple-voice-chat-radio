@@ -32,8 +32,12 @@ public class StreamConverter {
         return buffer.getFreeSpace() >= sampleCount;
     }
 
+    public void add(short[] samples, int offset, int length) {
+        buffer.add(samples, offset, length);
+    }
+
     public void add(short[] samples) {
-        buffer.add(samples);
+        add(samples, 0, samples.length);
     }
 
     public short[] getFrame() {
