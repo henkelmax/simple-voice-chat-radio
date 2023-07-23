@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "radio",
+  "version": "${version}",
+  "name": "Simple Radio",
+  "description": "Simple Radio",
+  "authors": [
+    "Max Henkel"
+  ],
+  "contact": {
+    "website": "https://modrepo.de"
+  },
+  "license": "All Rights Reserved",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "de.maxhenkel.radio.Radio"
+    ],
+    "voicechat": [
+      "de.maxhenkel.radio.RadioVoicechatPlugin"
+    ]
+  },
+  "mixins": [
+    "radio.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": ["1.20", "1.20.1"],
+    "java": ">=17",
+    "voicechat": ">=${minecraft_version}-${voicechat_api_version}"
+  },
+  "breaks": {
+    "fabric": "<${fabric_version}"
+  }
+}
