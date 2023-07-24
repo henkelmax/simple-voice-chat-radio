@@ -55,8 +55,8 @@ dependencies {
     modRuntimeOnly "maven.modrinth:simple-voice-chat:fabric-${voicechat_mod_version}"
     modRuntimeOnly "net.fabricmc.fabric-api:fabric-api:${fabric_version}"
 
-    implementation 'javazoom:jlayer:1.0.1'
-    shadow 'javazoom:jlayer:1.0.1'
+    implementation "javazoom:jlayer:${jlayer_version}"
+    shadow "javazoom:jlayer:${jlayer_version}"
 }
 
 processResources {
