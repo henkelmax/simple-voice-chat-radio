@@ -1,4 +1,4 @@
-# Simple Radio
+# Simple Voice Chat Radio
 
 A server-side Simple Voice Chat addon mod for Fabric adding a radio block capable of streaming mp3 radio streams.
 

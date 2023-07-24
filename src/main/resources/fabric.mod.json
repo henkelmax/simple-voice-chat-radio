@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "id": "radio",
   "version": "${version}",
-  "name": "Simple Radio",
-  "description": "Simple Radio",
+  "name": "Simple Voice Chat Radio",
+  "description": "Simple Voice Chat Radio",
   "authors": [
     "Max Henkel"
   ],
